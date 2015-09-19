@@ -135,8 +135,7 @@ nav svg {
 }
 
 .nav>li>a {
-  padding-left: 30px;
-  padding-right: 30px;
+  display: inline-block;
 }
 
 .navbar-nav>li>a {
