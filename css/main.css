@@ -1,0 +1,148 @@
+/**
+ * Description: Short description.
+ * Version: 0.0.1
+ * Last update: 2015/07/18
+ * Author: bkroggel <mail@bastiankroggel.com>
+ *
+ * Summary:
+ *
+ *  0. GLOBAL
+ *    - 0.1. BODY
+ *    - 0.2. FONTS
+ *  1. HEADER
+ *    - 1.1. BIG PICTURE
+ *    - 1.2. TYPE ELEMENT
+ *  
+ */
+
+/* ==========================================================================
+   0. GLOBAL
+   ========================================================================== */
+
+/* 0.1. BODY
+   ========================================================================== */
+body {
+  margin: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 0.2 FONTS
+   ========================================================================== */
+
+.nav>li>a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Karla';
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.nav>li>a:hover,
+.nav>li>a:active,
+.nav>li>a:visited,
+.nav>li:active,
+.nav .open>a, .nav .open>a:focus,
+.nav .open>a:hover {
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+.big-picture h1 {
+  font-family: 'Karla';
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  display: table;
+  margin: 0;
+}
+
+/* ==========================================================================
+   1. HEADER
+   ========================================================================== */
+
+/* 1.1. BIG PICTURE
+   ========================================================================== */
+.big-picture {
+  /*background: rgb(49, 54, 50);*/
+  background: url(../img/pexels.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  padding: 0;
+  height: 700px;
+  overflow: hidden;
+  display: table;
+  margin-bottom: 15px;
+}
+
+.big-picture .vertical-fit {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 30px;
+}
+
+.big-picture svg {
+  fill: white;
+  overflow: visible;
+  width: 700px;
+  height: auto;
+  padding-bottom: 15px;
+}
+
+.header-frame {
+  border: 3px solid white;
+  padding: 15px;
+  display: table;
+}
+
+nav {
+  bottom: 0;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  display: table;
+}
+
+.nav-frame {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  padding: 0;
+}
+
+nav svg {
+  width: 40px;
+  height: auto;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav ul {
+  width: 100%;
+}
+
+.nav>li {
+  width: 20%;
+}
+
+.nav>li>a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+
+/* 1.2. TYPE ELEMENT
+   ========================================================================== */
