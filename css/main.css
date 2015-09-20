@@ -24,6 +24,12 @@
 body {
   margin: 15px;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
 }
 
 /* 0.2 FONTS
@@ -36,15 +42,30 @@ body {
   font-family: 'Karla';
   font-weight: 400;
   letter-spacing: 2px;
+  padding: 3px 6px;
+  border: 2px solid white;
 }
 
 .nav>li>a:hover,
 .nav>li>a:active,
 .nav>li>a:visited,
 .nav>li:active,
-.nav .open>a, .nav .open>a:focus,
+.nav .open>a, 
+.nav .open>a:focus,
 .nav .open>a:hover {
   background-color: rgba(255, 255, 255, 0.0);
+}
+
+.nav>li>a:hover,
+.nav .open>a, 
+.nav .open>a:focus,
+.nav .open>a:hover {
+  border-color: black;
+  padding: 3px 6px;
+  line-height: 20px;
+  -webkit-transition: border-color 0.4s;
+  -moz-transition: border-color 0.4s;
+  transition: border-color 0.4s;
 }
 
 .big-picture h1 {
@@ -63,6 +84,10 @@ body {
   color: rgba(109, 109, 109, 0.8);
   font-size: 14px;
   margin: 40px 0 10px;
+}
+
+.blog>.section-header {
+  padding-left: 50px;
 }
 
 .about {
@@ -89,6 +114,31 @@ body {
   font-weight: 300;
   font-size: 20px;
   line-height: 40px;
+  color: rgba(0, 0, 0, 0.85);
+  letter-spacing: 0.01em;
+}
+
+/* 0.3 BUTTONS
+   ========================================================================== */
+.btn-standart {
+  color: black;
+  font-family: 'Karla';
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 0;
+  border: 2px solid black;
+  padding: 3px 6px;
+  font-size: 14px;
+}
+
+.btn-standart:hover,
+.btn-standart:active,
+.btn:focus {
+  background-color: black;
+  color: white;
+  border-color: black;
+  outline:0 !important;
 }
 
 /* ==========================================================================
@@ -173,9 +223,25 @@ nav svg {
 }
 
 .navbar-nav>li>a {
-  padding-top: 10px;
-  padding-bottom: 10px; 
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 7px; 
 }
 
-/* 1.2. TYPE ELEMENT
+/* 1.2. BLOG
    ========================================================================== */
+.horizontal-col-divider {
+  height: 2px;
+  width: 47.5%;
+  background-color: grey;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.horizontal-col-divider:nth-child(odd) {
+  margin-right: 2.5%;
+}
+
+.horizontal-col-divider:nth-child(even) {
+  margin-left: 2.5%;
+}
