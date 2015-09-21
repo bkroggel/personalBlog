@@ -78,7 +78,8 @@ body {
   margin: 0;
 }
 
-.section-header h3 {
+.section-header h3,
+.blog h3 {
   font-family: 'Karla';
   text-transform: uppercase;
   color: rgba(109, 109, 109, 0.8);
@@ -90,8 +91,8 @@ body {
   padding-left: 50px;
 }
 
-.about {
-  padding: 0 50px 0;
+.blog h3 {
+  margin: 20px 0 0;
 }
 
 .about h1,
@@ -109,13 +110,26 @@ body {
   font-style: italic;
 }
 
-.text p {
+.text p,
+.blog p {
   font-family: 'Lato';
   font-weight: 300;
   font-size: 20px;
   line-height: 40px;
   color: rgba(0, 0, 0, 0.85);
   letter-spacing: 0.01em;
+}
+
+.blog p {
+  margin-bottom: 40px;
+}
+
+.blog h1 {
+  font-family: 'CormorantMedium';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  margin-bottom: 40px;
 }
 
 /* 0.3 BUTTONS
@@ -228,20 +242,48 @@ nav svg {
   margin-top: 7px; 
 }
 
-/* 1.2. BLOG
+/* 1.2 ABOUT
    ========================================================================== */
-.horizontal-col-divider {
-  height: 2px;
-  width: 47.5%;
-  background-color: grey;
-  padding-left: 30px;
-  padding-right: 30px;
+.about {
+ padding: 0 50px 100px;
 }
 
-.horizontal-col-divider:nth-child(odd) {
-  margin-right: 2.5%;
+/* 1.3. BLOG
+   ========================================================================== */
+.row-height {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
 }
 
-.horizontal-col-divider:nth-child(even) {
-  margin-left: 2.5%;
+.col-height {
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+
+.vertical-col-divider:nth-child(2n+0) {
+  border-left: 2px solid black;
+}
+
+.blog-col {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.col-inner {
+  margin: 0 15px;
+  padding: 100px 13% 100px;
+  border-top: 2px solid black;
+  margin-top: -30px;
+}
+
+.row .blog-col:nth-child(1) .col-inner,
+.row .blog-col:nth-child(2) .col-inner {
+  border: none;
+}
+
+.btn-blog {
+  margin-top: 60px;
 }
