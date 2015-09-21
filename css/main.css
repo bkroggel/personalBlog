@@ -248,6 +248,14 @@ nav svg {
  padding: 0 50px 100px;
 }
 
+.about .cols:nth-child(odd) {
+  padding-left: 0;
+}
+
+.about .cols:nth-child(even) {
+  padding-right: 0;
+}
+
 /* 1.3. BLOG
    ========================================================================== */
 .row-height {
