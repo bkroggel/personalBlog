@@ -1,7 +1,8 @@
 /**
  * Description: Short description.
  * Version: 0.0.1
- * Last update: 2015/07/18
+ * Inital update: 2015/08/18
+ * Last update: 2015/09/23
  * Author: bkroggel <mail@bastiankroggel.com>
  *
  * Summary:
@@ -9,9 +10,14 @@
  *  0. GLOBAL
  *    - 0.1. BODY
  *    - 0.2. FONTS
- *  1. HEADER
- *    - 1.1. BIG PICTURE
- *    - 1.2. TYPE ELEMENT
+ *    - 0.3. BUTTONS
+ *  1. SINGLESCROLLING PAGE
+ *    - 1.1. BIG PICTURE | HEADER
+ *    - 1.2. ABOUT
+ *    - 1.3. WORK
+ *    - 1.4. BLOG
+ *    - 1.5. TWITTER
+ *    - 1.6. FOOTER
  *  
  */
 
@@ -30,6 +36,10 @@ body {
 .row {
   padding: 0;
   margin: 0;
+}
+
+.cols {
+  padding: 0;
 }
 
 /* 0.2 FONTS
@@ -79,7 +89,8 @@ body {
 }
 
 .section-header h3,
-.blog h3 {
+.blog h3,
+h3.year-date {
   font-family: 'Karla';
   text-transform: uppercase;
   color: rgba(109, 109, 109, 0.8);
@@ -87,9 +98,8 @@ body {
   margin: 40px 0 10px;
 }
 
-.blog>.section-header,
-.work>.section-header {
-  padding-left: 50px;
+h3.year-date {
+  margin: 0 0 30px;
 }
 
 .blog h3 {
@@ -112,7 +122,8 @@ body {
 }
 
 .text p,
-.blog p {
+.blog p,
+.work p {
   font-family: 'Lato';
   font-weight: 300;
   font-size: 20px;
@@ -125,12 +136,17 @@ body {
   margin-bottom: 40px;
 }
 
-.blog h1 {
+.blog h1,
+.work h1 {
   font-family: 'CormorantMedium';
   font-weight: normal;
   font-style: normal;
   font-size: 30px;
   margin-bottom: 40px;
+}
+
+.work h1 {
+  margin-bottom: 20px;
 }
 
 /* 0.3 BUTTONS
@@ -156,11 +172,19 @@ body {
   outline:0 !important;
 }
 
+.btn-frame-centered {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-centered {
+  margin-top: 30px;
+}
 /* ==========================================================================
-   1. HEADER
+   1. SINGLESCROLLING PAGE
    ========================================================================== */
 
-/* 1.1. BIG PICTURE
+/* 1.1. BIG PICTURE | HEADER
    ========================================================================== */
 .big-picture {
   /*background: rgb(49, 54, 50);*/
@@ -257,7 +281,92 @@ nav svg {
   padding-right: 0;
 }
 
-/* 1.3. BLOG
+
+/* 1.3. WORK
+   ========================================================================== */
+.work {
+  margin-bottom: 100px;
+}
+
+.img-container {
+   position: relative;
+   width: 100%;
+   height: 450px;
+   overflow: hidden;
+}
+
+.inner-img-container {
+   position: absolute;
+   top: -50%;
+   bottom: -50%;
+   left: 0;
+   right: 0;
+   text-align:center;
+   font: 0/0 a;
+}
+
+.img-container .centered-img {
+   display: inline-block;
+   vertical-align: middle;
+   height: 100%;
+}
+
+.img-container img {
+   display: inline-block;
+   min-height: 100%;
+   min-width: 100%;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+.overlay { 
+  position:absolute; 
+  width:100%; 
+  height:100%; 
+  top: 0; 
+  left: 0; 
+  display: none; 
+  cursor:pointer; 
+  text-align: center; 
+  z-index: 10;
+}
+
+.img-container:hover .overlay { 
+  display: block;
+}
+
+.img-container .overlay:hover { 
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.3s ease-in-out; 
+  -moz-transition: all 0.3s ease-in-out; 
+  -o-transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
+}
+
+.paper-background {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: black;
+  text-align: center;
+  margin: 60px;
+  padding: 50px;
+  background-color: white;
+}
+
+.overlay:hover .paper-background {
+  -webkit-transition: all 0.6s ease-in-out; 
+  -moz-transition: all 0.6s ease-in-out; 
+  -o-transition: all 0.6s ease-in-out; 
+  transition: all 0.6s ease-in-out;
+  opacity: 1;
+}
+
+/* 1.4. BLOG
    ========================================================================== */
 .row-height {
   display: table;
@@ -296,3 +405,10 @@ nav svg {
 .btn-blog {
   margin-top: 60px;
 }
+
+/* 1.5 TWITTER
+   ========================================================================== */
+
+
+/* 1.6 FOOTER
+   ========================================================================== */
