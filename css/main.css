@@ -157,6 +157,30 @@ h3.year-date {
   margin: 15px 0 10px;
 }
 
+.footer--nav {
+  text-align: right;
+  font-family: 'Lato';
+  font-size: 20px;
+  list-style: none;
+  margin-right: 25px;
+  margin-top: 60px;
+  font-weight: 300;
+  
+}
+
+.footer--nav a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer--nav li {
+  padding: 5px 0;
+}
+
+.footer--nav a:hover {
+  text-decoration: none;
+}
+
 /* 0.3 BUTTONS
    ========================================================================== */
 .btn-standart {
@@ -421,11 +445,38 @@ nav svg {
 
 /* 1.6 FOOTER
    ========================================================================== */
-footer {
+.footer {
   background-color: rgb(54, 54, 54);
-  height: 600px;
+  height: 500px;
   margin-top: 100px;
+  position: relative;
+  width: 100%;
 }
+
+.btn-footer {
+  border-color: white;
+  color: white;
+  background: none;
+}
+
+.footer--logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  float: right;
+}
+
+.footer--logo svg {
+  fill: white;
+}
+
+.footer--nav {
+  float: right;
+}
+
 
 /* 1.7 COPYRIGHT
    ========================================================================== */
