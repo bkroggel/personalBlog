@@ -149,6 +149,14 @@ h3.year-date {
   margin-bottom: 20px;
 }
 
+.copyright h1 {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  margin: 15px 0 10px;
+}
+
 /* 0.3 BUTTONS
    ========================================================================== */
 .btn-standart {
@@ -318,6 +326,7 @@ nav svg {
    width: 100%;
    padding: 0;
    margin: 0;
+   object-fit: cover;
 }
 
 .overlay { 
@@ -411,4 +420,12 @@ nav svg {
 
 
 /* 1.6 FOOTER
+   ========================================================================== */
+footer {
+  background-color: rgb(54, 54, 54);
+  height: 600px;
+  margin-top: 100px;
+}
+
+/* 1.7 COPYRIGHT
    ========================================================================== */
