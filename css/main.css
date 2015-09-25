@@ -188,20 +188,13 @@ p.timePosted {
   margin: 15px 0 10px;
 }
 
-.footer--nav {
-  text-align: right;
-  font-family: 'Lato';
-  font-size: 15px;
-  list-style: none;
-  margin-right: 25px;
-  margin-top: 60px;
-  font-weight: 300;
-  
-}
-
 .footer--nav a {
   color: white;
   text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 15px;
+  list-style: none;
+  font-weight: 300;
 }
 
 .footer--nav li {
@@ -657,7 +650,7 @@ p.interact {
 }
 
 .footer-frame {
-  margin: 30px;
+  margin: 20px;
 }
 
 .btn-footer {
@@ -691,7 +684,23 @@ p.interact {
 }
 
 .footer--nav {
-  float: right;
+  float: left;
+  padding: 20px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .footer-frame {
+    margin: 30px;
+  }
+
+  .footer--nav {
+    float: right;
+    text-align: right;
+    margin-top: 60px;
+    margin-right: 30px;
+    padding-right: 0;
+  }
 }
 
 
