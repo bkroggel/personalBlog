@@ -368,7 +368,7 @@ nav svg {
   padding: 15px 0 9px;
 }
 
-.navbar-hidden {
+.nav-height.navbar-hidden .navbar {
   margin-top: -57px;
 }
 

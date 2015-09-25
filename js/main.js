@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
 
-  
+  var nav_container = $('.nav-height');
   var navigation = $('.navbar')
 
-  navigation.waypoint({
+  nav_container.waypoint({
     handler: function(direction) { 
       if (direction === 'down') { 
         navigation.stop().addClass('stuck');
@@ -14,8 +14,8 @@ $(document).ready(function(){
     } 
   });
 
-  var stickyWrap = $('.navbar').one();
-  var menuAppearBuffer = $('.navbar').position().top + 600;
+  var stickyWrap = $('.nav-height').one();
+  var menuAppearBuffer = $('.nav-height').position().top + 600;
   var lastScrollTop = 0;
     
   $(window).scroll(function(){
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 });
 
-$(window).on('beforeunload', function(){
-  $(window).scrollTop(0);
-  $('html').text(''); 
-});
+// $(window).on('beforeunload', function(){
+//   $(window).scrollTop(0);
+//   $('html').text(''); 
+// });
