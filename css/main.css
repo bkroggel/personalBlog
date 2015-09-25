@@ -325,9 +325,20 @@ p.timePosted {
 nav {
   bottom: 0;
   height: 60px;
-  background: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
   display: table;
+  z-index: 9999;
+}
+
+.nav-height {
+  height: 60px;
+}
+
+.stuck {
+  position:fixed;
+  top: 0;
+  width: calc(100% - 30px);
 }
 
 .nav-frame {
@@ -345,15 +356,20 @@ nav svg {
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
+  background-color: white;
+  transition: margin-top .25s ease-in-out;
+  -moz-transition: margin-top .25s ease-in-out;
+  -webkit-transition: margin-top .25s ease-in-out;
 }
 
 .navbar-nav {
   width: 100%;
   text-align: center;
+  padding: 15px 0 9px;
 }
 
-.navbar-nav ul {
-  width: 100%;
+.navbar-hidden {
+  margin-top: -57px;
 }
 
 .nav>li {
