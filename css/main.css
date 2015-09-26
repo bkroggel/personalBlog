@@ -59,12 +59,23 @@ body {
   }
 }
 
+.dropdown-menu {
+  border: 2px solid black;
+  border-radius: 0;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.dropdown-toggle {
+  margin-bottom: 5px;
+}
 
 
 /* 0.2 FONTS
    ========================================================================== */
 
-.nav>li>a {
+.nav>li>a,
+.dropdown a {
   font-size: 18px;
   text-transform: uppercase;
   color: black;
@@ -95,6 +106,19 @@ body {
   -webkit-transition: border-color 0.4s;
   -moz-transition: border-color 0.4s;
   transition: border-color 0.4s;
+}
+
+.dropdown-menu li a {
+  border: none;
+  padding: 5px 20px;
+}
+
+.dropdown-menu>li>a:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .big-picture h1 {
@@ -460,7 +484,6 @@ nav svg {
 .about {
  padding-left: 20px;
  padding-right: 20px;
- padding-bottom: 80px;
 }
 
 .about .cols:nth-child(odd) {
@@ -475,7 +498,7 @@ nav svg {
   .about {
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
   }
 }
 
@@ -483,7 +506,7 @@ nav svg {
 /* 1.3. WORK
    ========================================================================== */
 .work {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 .img-container {
@@ -569,7 +592,7 @@ nav svg {
 /* 1.4. BLOG
    ========================================================================== */
 .blog {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .row-height {
