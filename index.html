@@ -12,6 +12,7 @@
   <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cormorant" type="text/css"/>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/paradeiser.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -25,6 +26,46 @@
   <header>
     
     <div class="big-picture">
+
+      <nav class="paradeiser hidden-md hidden-lg">
+          <a href="#">
+              <img src="logo.png" alt="Logo" class="paradeiser_logo">
+          </a>
+          <a href="#">
+              <div class="paradeiser_icon_canvas">
+                  <img src="img/menu_home.svg" alt="Navigate to Home">
+              </div>
+              <span>Home</span>
+          </a>
+          <a href="#">
+              <div class="paradeiser_icon_canvas">
+                  <img src="img/menu_shop.svg" alt="Navigate to Shop">
+              </div>
+              <span>Shop</span>
+          </a>
+
+          <!-- paste in as many links as you want -->
+
+          <!-- and include the dropdown aswell -->
+          <span class="paradeiser_dropdown">
+              <a href="#paradeiser-more" id="paradeiser-dropdown">
+                  <div class="paradeiser_icon_canvas">
+                      <img src="img/menu_overflow.svg" alt="">
+                  </div>
+                  <span>More</span>
+              </a>
+              <ul class="paradeiser_children" id="paradeiser-more">
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Yolo</a></li>
+                  <li class="paradeiser-hidden-desktop"><a href="#">Hidden on desktop</a></li>
+                  <li class="paradeiser-hidden-tablet"><a href="#">Hidden on tablet</a></li>
+                  <li class="paradeiser-hidden-phone"><a href="#">Hidden on phone</a></li>
+                  <li id="greybox"><a href="#!"></a></li>
+              </ul>
+          </span>
+      </nav>
+
       <div class="vertical-fit">
         <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 502.569 35.821" width="100%" enable-background="new 0 0 502.569 35.821" xml:space="preserve">
           <defs>
