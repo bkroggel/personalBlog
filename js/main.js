@@ -16,8 +16,8 @@ $(document).ready(function(){
 
 // calc screen hight (small and normal screens)
   var $header = $('.big-picture');
-  if($(window).width() >=992) {
-    var h = (window.innerHeight -30)
+  if($(window).width() >= 768) {
+    var h = (window.innerHeight - 30)
   } else {
     var h = (window.innerHeight)
   }
