@@ -42,11 +42,23 @@ body {
   padding: 0;
 }
 
+.anchor {
+  padding-top: 50px;
+}
+
 @media (min-width: 768px) {
   body {
     margin: 15px;
   }
 }
+
+@media  (min-width: 992px) {
+  .anchor {
+    padding-top: 30px;
+  }
+}
+
+
 
 /* 0.2 FONTS
    ========================================================================== */
@@ -111,7 +123,6 @@ h3.year-date {
   margin: 0 0 30px;
 }
 
-.blog h3,
 p.timePosted {
   margin: 20px 0 0;
 }
@@ -383,6 +394,13 @@ nav svg {
   margin-top: 7px; 
 }
 
+.navbar-nav>li>a.plain-nav,
+.navbar-nav>li>a.plain-nav:hover {
+  padding: 0;
+  margin:0;
+  border: none;
+}
+
 @media (min-width: 768px) {
   .big-picture .vertical-fit {
     text-align: left;
@@ -439,7 +457,9 @@ nav svg {
 /* 1.2 ABOUT
    ========================================================================== */
 .about {
- padding: 0 20px 80px;
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-bottom: 80px;
 }
 
 .about .cols:nth-child(odd) {
@@ -452,7 +472,9 @@ nav svg {
 
 @media (min-width: 768px) {
   .about {
-    padding: 0 50px 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
   }
 }
 

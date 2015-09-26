@@ -55,6 +55,17 @@ $(document).ready(function(){
     }
   });
 
+  //scroll function to show a smooth animation while automatically scrolling to item
+  var $root = $('html, body');
+  $('.paradeiser .scroll-nav, nav a').click(function() {
+      var href = $.attr(this, 'href');
+      $root.animate({
+          scrollTop: $(href).offset().top
+      }, 500, function () {
+          window.location.hash = href;
+      });
+      return false;
+  });
 });
 
 // this code would force the page to alway load on top(0)
