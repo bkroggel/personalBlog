@@ -411,6 +411,11 @@ nav svg {
   padding: 0;
 }
 
+.paradeiser {
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 .paradeiser a {
   font-family: 'Lato';
 }
@@ -419,7 +424,15 @@ nav svg {
 .paradeiser a:hover,
 .paradeiser .paradeiser_dropdown.active,
 .paradeiser .paradeiser_dropdown:hover {
-  background-color: rgb(218, 218, 218);
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+.paradeiser ul li {
+  background-color: rgb(54, 54, 54);
+}
+
+.paradeiser ul li:last-child a {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* 1.2 ABOUT
