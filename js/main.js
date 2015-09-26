@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+ 
+    $('.wow-standart').addClass('wow fadeIn').attr('data-wow-delay', '.25s');
+    $('.blog .row .wow:nth-child(odd)').addClass('fadeInLeft').attr('data-wow-delay', '0s');
+    $('.blog .row .wow:nth-child(even)').addClass('fadeInRight').attr('data-wow-delay', '0s');
+
+  wow = new WOW(
+    {
+    mobile:       false
+  }
+  )
+  wow.init();
 
   var nav_container = $('.nav-height');
   var navigation = $('.navbar')
@@ -30,7 +41,6 @@ $(document).ready(function(){
       lastScrollTop = st;
     }
   });
-
 
 });
 
