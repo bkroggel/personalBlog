@@ -163,8 +163,8 @@ p.timePosted {
 }
 
 .work p {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 13px;
+  line-height: 17px;
 }
 
 .blog h1,
@@ -488,7 +488,7 @@ nav svg {
   color: black;
   text-align: center;
   margin: 60px;
-  padding: 50px;
+  padding: 40px 20px;
   background-color: white;
   overflow: hidden;
 }
@@ -499,6 +499,12 @@ nav svg {
   -o-transition: all 0.6s ease-in-out; 
   transition: all 0.6s ease-in-out;
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .paper-background {
+    padding: 60px;
+  }
 }
 
 /* 1.4. BLOG
