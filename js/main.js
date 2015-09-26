@@ -1,17 +1,29 @@
 $(document).ready(function(){
 
- 
-    $('.wow-standart').addClass('wow fadeIn').attr('data-wow-delay', '.25s');
+// WOW.js Effects
+    // every class wow-standart 
+    $('.wow-standart').addClass('wow fadeIn').attr('data-wow-delay', '0s');
+    // the blog cols
     $('.blog .row .wow:nth-child(odd)').addClass('fadeInLeft').attr('data-wow-delay', '0s');
     $('.blog .row .wow:nth-child(even)').addClass('fadeInRight').attr('data-wow-delay', '0s');
 
   wow = new WOW(
     {
-    mobile:       false
+    mobile:       false,
   }
   )
   wow.init();
 
+// calc screen hight (small and normal screens)
+  var $header = $('.big-picture');
+  if($(window).width() >=992) {
+    var h = (window.innerHeight -30)
+  } else {
+    var h = (window.innerHeight)
+  }
+  $header.css('min-height', h);
+  
+// adds stuck or removes stuck class (waypoint)
   var nav_container = $('.nav-height');
   var navigation = $('.navbar')
 
@@ -25,6 +37,7 @@ $(document).ready(function(){
     } 
   });
 
+// hide or shows navbar
   var stickyWrap = $('.nav-height').one();
   var menuAppearBuffer = $('.nav-height').position().top + 600;
   var lastScrollTop = 0;
@@ -44,6 +57,7 @@ $(document).ready(function(){
 
 });
 
+// this code would force the page to alway load on top(0)
 // $(window).on('beforeunload', function(){
 //   $(window).scrollTop(0);
 //   $('html').text(''); 
