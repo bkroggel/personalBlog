@@ -323,9 +323,6 @@ p.timePosted {
 }
 
 nav {
-  bottom: 0;
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
   display: table;
   z-index: 9999;
@@ -412,8 +409,8 @@ nav svg {
 }
 
 .paradeiser {
-  box-shadow: none;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 1.0);
+  height: 75px;
 }
 
 .paradeiser a {
@@ -425,6 +422,10 @@ nav svg {
 .paradeiser .paradeiser_dropdown.active,
 .paradeiser .paradeiser_dropdown:hover {
   background-color: rgba(255, 255, 255, 1.0);
+}
+
+.paradeiser ul {
+  top: 75px;
 }
 
 .paradeiser ul li {
